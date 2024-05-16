@@ -1,0 +1,40 @@
+{
+  "hash": "01b4cd08",
+  "configHash": "660576fa",
+  "lockfileHash": "c19128f2",
+  "browserHash": "cba3df91",
+  "optimized": {
+    "@heroicons/react/24/solid": {
+      "src": "../../node_modules/@heroicons/react/24/solid/esm/index.js",
+      "file": "@heroicons_react_24_solid.js",
+      "fileHash": "299876ac",
+      "needsInterop": false
+    },
+    "@tremor/react": {
+      "src": "../../node_modules/@tremor/react/dist/index.js",
+      "file": "@tremor_react.js",
+      "fileHash": "6851c292",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "6a1d0973",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "50524731",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-DHEZ6HTF": {
+      "file": "chunk-DHEZ6HTF.js"
+    },
+    "chunk-5VW2NNEB": {
+      "file": "chunk-5VW2NNEB.js"
+    }
+  }
+}
