@@ -10,6 +10,11 @@ module.exports = {
     transparent: "transparent",
     current: "currentColor",
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+        custom: ['"Your Custom Font"', 'serif'], // Puedes agregar tus propias fuentes aquí
+      },
       colors: {
         // light mode
         tremor: {
@@ -45,11 +50,11 @@ module.exports = {
         "dark-tremor": {
           brand: {
             faint: "#0B1229",
-            muted: colors.blue[950],
-            subtle: colors.blue[800],
-            DEFAULT: colors.blue[500],
-            emphasis: colors.blue[400],
-            inverted: colors.blue[950],
+            muted: colors.cyan[950],
+            subtle: colors.cyan[800],
+            DEFAULT: colors.cyan[800],
+            emphasis: colors.cyan[400],
+            inverted: colors.cyan[950],
           },
           background: {
             muted: "red",
@@ -65,9 +70,9 @@ module.exports = {
           },
           content: {
             subtle: colors.gray[600],
-            DEFAULT: colors.gray[500],
-            emphasis: colors.gray[200],
-            strong: colors.gray[50],
+            DEFAULT: colors.cyan[600],
+            emphasis: colors.cyan[600],
+            strong: colors.gray[600],
             inverted: colors.gray[950],
           },
         },
@@ -83,9 +88,9 @@ module.exports = {
         "dark-tremor-dropdown": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
       },
       borderRadius: {
-        "tremor-small": "0.375rem",
-        "tremor-default": "0.5rem",
-        "tremor-full": "9999px",
+        "tremor-small": "0px",
+        "tremor-default": "0px",
+        "tremor-full": "0px",
       },
       fontSize: {
         "tremor-label": ["0.75rem", { lineHeight: "1rem" }],
