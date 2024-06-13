@@ -34,39 +34,6 @@ const Header = ({
           </div>
         </div>
 
-        {/* <div className="flex-1">
-          <p className="cursor-pointer">
-            <span className="font-bold italic sm:text-md text-sm">
-              Altura
-            </span>{" "}
-            <strong className="text-white sm:text-md text-sm">
-              {" "}
-              {alt} cm
-            </strong>
-          </p>
-          <p className="cursor-pointer">
-            <span className="font-bold italic sm:text-md text-sm">Peso</span>{" "}
-            <strong className="text-white sm:text-md text-sm">
-              {" "}
-              {peso} kg
-            </strong>
-          </p>
-          <p className="cursor-pointer">
-            <span className="font-bold italic sm:text-md text-sm">IMC</span>{" "}
-            <strong className="text-white sm:text-md text-sm">
-              {" "}
-              {IMC_cal}
-            </strong>
-          </p>
-          <p className="cursor-pointer">
-            <span className="font-bold italic sm:text-md text-sm">Grasa</span>
-            <strong className="text-white sm:text-md text-sm">
-              {" "}
-              {grasa} %
-            </strong>
-          </p>
-        </div> */}
-
         <div className="opacity-50 flex-2">
           <img
             src="src/images/logo.png"
