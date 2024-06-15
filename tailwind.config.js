@@ -10,6 +10,11 @@ module.exports = {
     transparent: "transparent",
     current: "currentColor",
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+        custom: ['"Your Custom Font"', 'serif'], // Puedes agregar tus propias fuentes aquí
+      },
       colors: {
         // light mode
         tremor: {
@@ -47,7 +52,7 @@ module.exports = {
             faint: "#0B1229",
             muted: colors.cyan[950],
             subtle: colors.cyan[800],
-            DEFAULT: colors.cyan[700],
+            DEFAULT: colors.cyan[800],
             emphasis: colors.cyan[400],
             inverted: colors.cyan[950],
           },
@@ -67,7 +72,7 @@ module.exports = {
             subtle: colors.gray[600],
             DEFAULT: colors.cyan[600],
             emphasis: colors.cyan[600],
-            strong: colors.gray[300],
+            strong: colors.gray[600],
             inverted: colors.gray[950],
           },
         },
