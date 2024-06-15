@@ -6,7 +6,7 @@ import {
   Accordion,
   AccordionHeader,
   AccordionBody,
-} from "@tremor/react"; // Asegúrate de importar correctamente estos componentes
+} from "@tremor/react";
 
 const EvaluationCard = ({
   label,
@@ -35,7 +35,7 @@ const EvaluationCard = ({
       <BadgeDelta
         deltaType={hayDolencia === 1 ? "increase" : "decrease"}
         isIncreasePositive={hayDolencia === 1 ? "true" : "false"}
-        className="p-2 font-bold"
+        className="p-1.5 font-bold"
       >
         {hayDolencia === 1 ? "Existe dolencia" : "Sin dolencia registrada"}
       </BadgeDelta>
@@ -44,8 +44,8 @@ const EvaluationCard = ({
         <h1 className="text-cyan-500 font-bold text-md">{descripcion}</h1>
       </Divider>
 
-      <Accordion>
-        <AccordionHeader className="bg-cyan-600 bg-opacity-50 hover:bg-cyan-700">
+      <Accordion className="border-none">
+        <AccordionHeader className="bg-cyan-600 bg-opacity-50 hover:bg-cyan-700 rounded-2xl">
           <h1 className="text-md font-bold text-white">Resultados</h1>
         </AccordionHeader>
         <AccordionBody className="mt-4">{children}</AccordionBody>

@@ -7,7 +7,6 @@ const CustomTab = ({ value, iconSrc, altText, label }) => {
       value={value}
       className="hover:-translate-y-1 hover:border-none focus:border-none px-1 py-2"
     >
-      {/* <img src={iconSrc} alt={altText} className="inline-block w-7 h-7" /> */}
       <img
         src={iconSrc}
         alt={altText}
