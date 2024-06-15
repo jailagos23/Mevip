@@ -33,7 +33,7 @@ const Medicine = ({ medicamento, frecuencia, cantidad, tipo, children }) => {
           <p className="text-blue-300 text-2xl font-bold">{frecuencia}</p>
         </div>
       </div>
-      <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-3 mt-2">
+      <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-2 mt-2">
         <p className="text-black">{children}</p>
       </div>
     </div>

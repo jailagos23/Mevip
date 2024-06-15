@@ -112,6 +112,12 @@ const DashBoard = () => {
 
                 <Col numColSpan={4} numColSpanLg={1} numColSpanMd={1}>
                   <Card className="rounded-xl bg-gray-900 text-white p-6">
+                    <IconMain
+                      nombre="DATOS"
+                      iconSrc="src/images/icono_datos.png"
+                      iconAlt="Icono datos"
+                    ></IconMain>
+                    <Divider />
                     <DataCard
                       altura={170}
                       grasa={15}
@@ -124,7 +130,7 @@ const DashBoard = () => {
                 <Col numColSpan={4} numColSpanLg={1} numColSpanMd={1}>
                   <Card className="rounded-xl bg-gray-900 text-white p-6">
                     <IconMain
-                      iconSrc="src/images/icono_avispa.png"
+                      iconSrc="src/images/icono_alergias.png"
                       iconAlt="Icono vascular"
                       nombre="ALERGIAS"
                     ></IconMain>
@@ -149,7 +155,7 @@ const DashBoard = () => {
                         diagUrgency={1}
                       ></Allergy>
                     </div>
-                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-3 mt-6">
+                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-2 mt-6">
                       <p className="text-black">
                         Comentarios adicionales respeto a las alergias.
                       </p>
@@ -160,7 +166,7 @@ const DashBoard = () => {
                 <Col numColSpan={4} numColSpanLg={2}>
                   <Card className="rounded-xl bg-gray-900 text-white p-6">
                     <IconMain
-                      iconSrc="src/images/icono_bacterias.png"
+                      iconSrc="src/images/icono_patologias.png"
                       iconAlt="Icono bacterias"
                       nombre="PATOLOGÍAS"
                     ></IconMain>
@@ -170,7 +176,7 @@ const DashBoard = () => {
                       <Pathology patologia={"Síndrome de Gilbert"}></Pathology>
                       <Pathology patologia={"Hipertensión"}></Pathology>
                     </div>
-                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-3 mt-6">
+                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-2 mt-6">
                       <p className="text-black">
                         Comentarios adicionales respeto a las patologías.
                       </p>
@@ -181,7 +187,7 @@ const DashBoard = () => {
                 <Col numColSpan={4} numColSpanLg={2}>
                   <Card className="rounded-xl bg-gray-900 text-white p-6">
                     <IconMain
-                      iconSrc="src/images/icono_adn.png"
+                      iconSrc="src/images/icono_antecedentes.png"
                       iconAlt="Icono ADN"
                       nombre="ANTECEDENTES"
                     ></IconMain>
@@ -199,7 +205,7 @@ const DashBoard = () => {
                         sexo="Masculino"
                       ></Inheritance>
                     </div>
-                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-3 mt-6">
+                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-2 mt-6">
                       <p className="text-black">
                         Comentarios adicionales respeto a los antecedentes.
                       </p>
@@ -210,12 +216,12 @@ const DashBoard = () => {
                 <Col numColSpan={4} numColSpanLg={2}>
                   <Card className="rounded-xl bg-gray-900 text-white p-6">
                     <IconMain
-                      iconSrc="src/images/icono_mente.png"
+                      iconSrc="src/images/icono_tratamientos.png"
                       iconAlt="Icono Mente"
                       nombre="TRATAMIENTOS"
                     ></IconMain>
                     <Divider className="my-4" />
-                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-3 mt-2">
+                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-2 mt-2">
                       <p className="text-black">
                         En este recuadro se puede registrar los tratamientos que
                         actualmente lleve a cabo el paciente, independiente de
@@ -228,7 +234,7 @@ const DashBoard = () => {
                 <Col numColSpan={4} numColSpanLg={2}>
                   <Card className="rounded-xl bg-gray-900 text-white p-6">
                     <IconMain
-                      iconSrc="src/images/icono_medicina.png"
+                      iconSrc="src/images/icono_medicamentos.png"
                       iconAlt="Icono Medicamentos"
                       nombre="MEDICAMENTOS"
                     ></IconMain>
@@ -267,7 +273,7 @@ const DashBoard = () => {
                 <Col numColSpan={1} numColSpanLg={1}>
                   <EvaluationCard
                     label="NDI"
-                    iconSrc="src/images/cuello_icono.png"
+                    iconSrc="src/images/icono_cuello.png"
                     iconAlt="Icono cuello"
                     hayDolencia={0}
                     descripcion="Cuello"
@@ -289,7 +295,7 @@ const DashBoard = () => {
                 <Col numColSpan={1} numColSpanLg={1}>
                   <EvaluationCard
                     label="OSWESTRY"
-                    iconSrc="src/images/espalda_icono.png"
+                    iconSrc="src/images/icono_espalda.png"
                     iconAlt="Icono espalda"
                     hayDolencia={1}
                     descripcion="Espalda"
@@ -311,7 +317,7 @@ const DashBoard = () => {
                 <Col numColSpan={1} numColSpanLg={1}>
                   <EvaluationCard
                     label="QUICKDASH"
-                    iconSrc="src/images/mano_icono.png"
+                    iconSrc="src/images/icono_mano.png"
                     iconAlt="Icono mano"
                     hayDolencia={1}
                     descripcion="Exremidades superiores"
@@ -361,7 +367,7 @@ const DashBoard = () => {
                 <Col numColSpan={1} numColSpanLg={1}>
                   <EvaluationCard
                     label="LEFS"
-                    iconSrc="src/images/pie_icono.png"
+                    iconSrc="src/images/icono_pies.png"
                     iconAlt="Icono pie"
                     hayDolencia={1}
                     descripcion="Extremidades inferiores"
@@ -383,7 +389,7 @@ const DashBoard = () => {
                 <Col numColSpan={1} numColSpanLg={1}>
                   <EvaluationCard
                     label="KOOS"
-                    iconSrc="src/images/pierna_icono.png"
+                    iconSrc="src/images/icono_rodilla.png"
                     iconAlt="Icono pierna"
                     hayDolencia={1}
                     descripcion="Rodillas"
@@ -459,7 +465,7 @@ const DashBoard = () => {
                 <Col numColSpan={1} numColSpanLg={1}>
                   <EvaluationCard
                     label="WOMAC"
-                    iconSrc="src/images/coxis_icono.png"
+                    iconSrc="src/images/icono_cadera.png"
                     iconAlt="Icono coxis"
                     hayDolencia={1}
                     descripcion="Artrosis de cadera y/o rodilla"
@@ -496,7 +502,7 @@ const DashBoard = () => {
                 <Col numColSpan={1} numColSpanLg={1}>
                   <EvaluationCard
                     label="FIQ"
-                    iconSrc="src/images/cuerpo_icono.png"
+                    iconSrc="src/images/icono_cuerpo.png"
                     iconAlt="Icono torso"
                     hayDolencia={0}
                     descripcion="Fibromialgia"
@@ -509,258 +515,7 @@ const DashBoard = () => {
               </Grid>
             </TabPanel>
 
-            <TabPanel>
-              <Grid
-                numItems={1}
-                numItemsSm={2}
-                numItemsMd={3}
-                numItemsLg={4}
-                className="gap-x-3 gap-y-5 mx-3"
-              >
-                <Col numColSpan={1} numColSpanLg={1}>
-                  <EvaluationCard
-                    label="NDI"
-                    iconSrc="src/images/cuello_icono.png"
-                    iconAlt="Icono cuello"
-                    hayDolencia={0}
-                    descripcion="Cuello"
-                  >
-                    <h1 className="text-cyan-400 text-lg mb-4">
-                      <strong>Nivel de discapacidad actual</strong>
-                    </h1>
-                    <ProgressCircle value={54} size="xl">
-                      <span className="flex h-32 w-32 items-center justify-center rounded-full bg-indigo-100 text-4xl font-bold text-indigo-500">
-                        54%
-                      </span>
-                    </ProgressCircle>
-                    <h1 className="text-cyan-400 text-3xl mt-2">
-                      <strong>Incapacidad moderada</strong>
-                    </h1>
-                  </EvaluationCard>
-                </Col>
-
-                <Col numColSpan={1} numColSpanLg={1}>
-                  <EvaluationCard
-                    label="OSWESTRY"
-                    iconSrc="src/images/espalda_icono.png"
-                    iconAlt="Icono espalda"
-                    hayDolencia={1}
-                    descripcion="Espalda"
-                  >
-                    <h1 className="text-cyan-300 text-lg mb-4">
-                      <strong>Nivel de discapacidad actual</strong>
-                    </h1>
-                    <ProgressCircle value={18} size="xl">
-                      <span className="flex h-32 w-32 items-center justify-center rounded-full bg-indigo-100 text-4xl font-bold text-indigo-500">
-                        18%
-                      </span>
-                    </ProgressCircle>
-                    <h1 className="text-cyan-400 text-3xl mt-2">
-                      <strong>Incapacidad leve</strong>
-                    </h1>
-                  </EvaluationCard>
-                </Col>
-
-                <Col numColSpan={1} numColSpanLg={1}>
-                  <EvaluationCard
-                    label="QUICKDASH"
-                    iconSrc="src/images/mano_icono.png"
-                    iconAlt="Icono mano"
-                    hayDolencia={1}
-                    descripcion="Exremidades superiores"
-                  >
-                    <h1 className="text-red-500 text-lg">
-                      <strong>General</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">4.2 pts (75%)</span>{" "}
-                      <span className="text-lg font-bold">5</span>
-                    </p>
-                    <ProgressBar
-                      value={75}
-                      color="red-300"
-                      className="mb-7 mt-1"
-                    />
-                    <h1 className="text-red-500 text-lg">
-                      <strong>Laboral</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">1.5 pts (30%)</span>{" "}
-                      <span className="text-lg font-bold">5</span>
-                    </p>
-                    <ProgressBar
-                      value={30}
-                      color="red-300"
-                      className="mb-7 mt-1"
-                    />
-                    <h1 className="text-red-500 text-lg">
-                      <strong>Alto rendimiento</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">2.4 pts (48%)</span>{" "}
-                      <span className="text-lg font-bold">5</span>
-                    </p>
-                    <ProgressBar
-                      value={48}
-                      color="red-300"
-                      className="mb-7 mt-1"
-                    />
-                  </EvaluationCard>
-                </Col>
-
-                <Col numColSpan={1} numColSpanLg={1}>
-                  <EvaluationCard
-                    label="LEFS"
-                    iconSrc="src/images/pie_icono.png"
-                    iconAlt="Icono pie"
-                    hayDolencia={1}
-                    descripcion="Extremidades inferiores"
-                  >
-                    <h1 className="text-cyan-400 text-lg mb-4">
-                      <strong>Nivel de discapacidad actual</strong>
-                    </h1>
-                    <ProgressCircle value={75} size="xl">
-                      <span className="flex h-32 w-32 items-center justify-center rounded-full bg-indigo-100 text-4xl font-bold text-indigo-500">
-                        75%
-                      </span>
-                    </ProgressCircle>
-                    <h1 className="text-cyan-400 text-3xl mt-2">
-                      <strong>Incapacitado</strong>
-                    </h1>
-                  </EvaluationCard>
-                </Col>
-
-                <Col numColSpan={1} numColSpanLg={1}>
-                  <EvaluationCard
-                    label="KOOS"
-                    iconSrc="src/images/pierna_icono.png"
-                    iconAlt="Icono pierna"
-                    hayDolencia={1}
-                    descripcion="Rodillas"
-                  >
-                    <h1 className="text-green-500 text-lg">
-                      <strong>Síntomas</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">43 pts</span>{" "}
-                      <span className="text-lg font-bold">100</span>
-                    </p>
-                    <ProgressBar
-                      value={75}
-                      color="green-500"
-                      className="mb-7 mt-1"
-                    />
-                    <h1 className="text-green-500 text-lg">
-                      <strong>Dolor</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">78 pts</span>{" "}
-                      <span className="text-lg font-bold">100</span>
-                    </p>
-                    <ProgressBar
-                      value={30}
-                      color="green-500"
-                      className="mb-7 mt-1"
-                    />
-                    <h1 className="text-green-500 text-lg">
-                      <strong>Actividades cotidianas</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">34 pts</span>{" "}
-                      <span className="text-lg font-bold">100</span>
-                    </p>
-                    <ProgressBar
-                      value={48}
-                      color="green-500"
-                      className="mb-7 mt-1"
-                    />
-                    <h1 className="text-green-500 text-lg">
-                      <strong>Deportivo — Recreacional </strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">55 pts</span>{" "}
-                      <span className="text-lg font-bold">100</span>
-                    </p>
-                    <ProgressBar
-                      value={48}
-                      color="green-500"
-                      className="mb-7 mt-1"
-                    />
-                    <h1 className="text-green-500 text-lg">
-                      <strong>Calidad de vida</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">97 pts</span>{" "}
-                      <span className="text-lg font-bold">100</span>
-                    </p>
-                    <ProgressBar
-                      value={48}
-                      color="green-500"
-                      className="mb-7 mt-1"
-                    />
-                  </EvaluationCard>
-                </Col>
-
-                <Col numColSpan={1} numColSpanLg={1}>
-                  <EvaluationCard
-                    label="WOMAC"
-                    iconSrc="src/images/coxis_icono.png"
-                    iconAlt="Icono coxis"
-                    hayDolencia={1}
-                    descripcion="Artrosis de cadera y/o rodilla"
-                  >
-                    <h1 className="text-red-500 text-lg">
-                      <strong>Dolor percibido</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">11.6 pts (58%)</span>{" "}
-                      <span className="text-lg font-bold">20</span>
-                    </p>
-                    <ProgressBar
-                      value={58}
-                      color="red-300"
-                      className="mb-7 mt-1"
-                    />
-                    <h1 className="text-red-500 text-lg">
-                      <strong>Capacidad funcional</strong>
-                    </h1>
-                    <p className="flex items-center justify-between mt-2">
-                      <span className="text-lg font-bold">0</span>{" "}
-                      <span className="text-xl font-bold">8.3 pts (41.5%)</span>{" "}
-                      <span className="text-lg font-bold">20</span>
-                    </p>
-                    <ProgressBar
-                      value={41.5}
-                      color="red-300"
-                      className="mb-7 mt-1"
-                    />
-                  </EvaluationCard>
-                </Col>
-
-                <Col numColSpan={1} numColSpanLg={1}>
-                  <EvaluationCard
-                    label="FIQ"
-                    iconSrc="src/images/cuerpo_icono.png"
-                    iconAlt="Icono torso"
-                    hayDolencia={0}
-                    descripcion="Fibromialgia"
-                  >
-                    <h1 className="text-cyan-400 text-3xl mt-2">
-                      <strong>Incapacidad moderada</strong>
-                    </h1>
-                  </EvaluationCard>
-                </Col>
-              </Grid>
-            </TabPanel>
+            <TabPanel></TabPanel>
 
             <TabPanel>
               <Grid
@@ -771,7 +526,14 @@ const DashBoard = () => {
                 className="gap-x-3 gap-y-5"
               >
                 <Col numColSpan={1} numColSpanLg={1}>
-                  <SleepCard horas={2} estrellas={5}></SleepCard>
+                  <Card className="rounded-xl">
+                    <IconMain
+                      iconSrc="src/images/icono_sueño.png"
+                      iconAlt="Icono cama"
+                      nombre="SUEÑO"
+                    ></IconMain>
+                    <SleepCard horas={2} estrellas={5}></SleepCard>
+                  </Card>
                 </Col>
 
                 <Col>
@@ -783,34 +545,6 @@ const DashBoard = () => {
                     ></IconMain>
                     <Divider />
 
-                    {/* <section className="mb-5">
-                      <h2 className="text-cyan-400 text-2xl font-bold text-center mb-2">
-                        Actividad 1
-                      </h2>
-                      <IntensityBar intensidad={4} />
-                      <div className="grid grid-cols-2 text-center mt-5 gap-x-12">
-                        <div className="flex flex-col items-center">
-                          <img
-                            src="src/images/icono_calendario.png"
-                            alt="Icono calendario"
-                            className="inline-block w-[32px] mb-1"
-                          />
-                          <p className="text-white text-md font-bold">
-                            2 días/sem
-                          </p>
-                        </div>
-                        <div className="flex flex-col items-center">
-                          <img
-                            src="src/images/icono_cronometro.png"
-                            alt="Icono reloj"
-                            className="inline-block w-[32px] mb-1"
-                          />
-                          <p className="text-white text-md font-bold">
-                            3 horas
-                          </p>
-                        </div>
-                      </div>
-                    </section> */}
                     <Activity
                       nombre="Tenis"
                       intensidad={4}
@@ -832,7 +566,7 @@ const DashBoard = () => {
                 <Col>
                   <Card className="rounded-xl">
                     <IconMain
-                      iconSrc="src/images/icono_alimentos.png"
+                      iconSrc="src/images/icono_comida.png"
                       iconAlt="Icono alimentos"
                       nombre="ALIMENTOS"
                     ></IconMain>
@@ -887,6 +621,60 @@ const DashBoard = () => {
                         iconAlt="Icono agua"
                       ></Food>
                     </section>
+                  </Card>
+                </Col>
+              </Grid>
+            </TabPanel>
+
+            <TabPanel>
+              <Grid
+                numItems={1}
+                numItemsSm={2}
+                numItemsLg={4}
+                className="gap-x-3 gap-y-5 mx-3 my-3"
+              >
+                <Col numColSpan={4} numColSpanLg={2}>
+                  <Card className="rounded-xl shadow-lg">
+                    <IconMain
+                      iconSrc="src/images/icono_sueño_plus.png"
+                      iconAlt="Icono sueño plus"
+                      nombre="SUEÑO"
+                    ></IconMain>
+                    <Divider />
+                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-3 mt-6">
+                      <p className="text-black">
+                        Recomendaciones en actividad.
+                      </p>
+                    </div>
+                  </Card>
+                </Col>
+                <Col numColSpan={4} numColSpanLg={2}>
+                  <Card className="rounded-xl shadow-lg">
+                    <IconMain
+                      iconSrc="src/images/icono_deporte_plus.png"
+                      iconAlt="Icono deporte plus"
+                      nombre="ACTIVIDAD"
+                    ></IconMain>
+                    <Divider />
+                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-3 mt-6">
+                      <p className="text-black">Recomendaciones en sueño.</p>
+                    </div>
+                  </Card>
+                </Col>
+
+                <Col numColSpan={4} numColSpanLg={2}>
+                  <Card className="rounded-xl shadow-lg">
+                    <IconMain
+                      iconSrc="src/images/icono_comida_plus.png"
+                      iconAlt="Icono alimentación plus"
+                      nombre="ALIMENTACIÓN"
+                    ></IconMain>
+                    <Divider />
+                    <div className="bg-slate-50 rounded-2xl border-2 border-cyan-600 text-justify text-lg p-3 mt-6">
+                      <p className="text-black">
+                        Recomendaciones en alimentación.
+                      </p>
+                    </div>
                   </Card>
                 </Col>
               </Grid>

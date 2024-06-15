@@ -36,17 +36,17 @@ const Header = ({
 
         <div className="opacity-50 flex-2">
           <img
-            src="src/images/logo.png"
+            src="src/images/mevia_1.png"
             alt="Logo MEVIP"
-            className="w-full max-w-[180px] sm:max-w-[250px] h-auto mr-2 hidden md:block"
+            className="w-[180px] sm:w-[220px] h-auto mr-2 hidden md:block"
           />
         </div>
 
         <div className="opacity-50 flex-2">
           <img
-            src="src/images/logo2.png"
+            src="src/images/mevia_2.png"
             alt="Logo MEVIP pequeño"
-            className="w-full max-w-[95px] sm:max-w-[95px] h-auto mr-3 hidden sm:block md:hidden"
+            className="w-full max-w-[75px] sm:max-w-[75px] h-auto mr-3 hidden sm:block md:hidden"
           />
         </div>
       </div>

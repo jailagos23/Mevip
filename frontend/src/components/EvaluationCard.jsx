@@ -24,8 +24,8 @@ const EvaluationCard = ({
           alt={iconAlt}
           className={
             hayDolencia === 1
-              ? "inline-block w-20 rounded-full border-4 border-green-500 shadow-green"
-              : "inline-block w-20 rounded-full border-4 border-red-500 shadow-red"
+              ? "inline-block w-20 rounded-full border-4 border-green-500"
+              : "inline-block w-20 rounded-full border-4 border-red-500"
           }
         />
         <br />
